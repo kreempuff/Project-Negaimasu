@@ -4,11 +4,13 @@
   "description": "Hope is here;",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon -e js,html server.js & gulp watch"
+    "start": "nodemon -e js,html server.js & gulp watch",
+    "postinstall": "bash ./post_install.sh"
   },
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.12.4",
+    "bower": "^1.6.5",
     "crypto": "0.0.3",
     "dotenv": "^1.2.0",
     "ejs": "^2.3.1",
