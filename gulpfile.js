@@ -25,7 +25,7 @@ gulp.task('styles', function(){
 
 gulp.task('scripts', function() {
 	return gulp.src("src/javascript/**")
-		.pipe(concat('jsBundle.js'))
+		.pipe(concat('main.js'))
 		.pipe(beautify({indentSize: 4, indentChar : ' '}))
 		.pipe(gulp.dest("dist/js/"))
 		.pipe(rename({suffix: ".min"}))
